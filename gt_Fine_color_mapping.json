@@ -1,0 +1,567 @@
+{
+  "background": [
+    0,
+    0,
+    0
+  ],
+  "alligator": [
+    63,
+    0,
+    0
+  ],
+  "armadillo": [
+    255,
+    255,
+    63
+  ],
+  "badger": [
+    255,
+    191,
+    63
+  ],
+  "bat": [
+    127,
+    127,
+    255
+  ],
+  "bear": [
+    191,
+    255,
+    127
+  ],
+  "bearblack": [
+    255,
+    127,
+    191
+  ],
+  "beaver": [
+    255,
+    0,
+    255
+  ],
+  "bighornram": [
+    0,
+    0,
+    127
+  ],
+  "bluejay": [
+    127,
+    191,
+    191
+  ],
+  "boar": [
+    191,
+    191,
+    63
+  ],
+  "buck": [
+    127,
+    255,
+    255
+  ],
+  "buffalo": [
+    127,
+    0,
+    0
+  ],
+  "bull": [
+    191,
+    255,
+    63
+  ],
+  "californiacondor": [
+    63,
+    127,
+    0
+  ],
+  "cardinal": [
+    127,
+    0,
+    63
+  ],
+  "carolinaparakeet": [
+    127,
+    191,
+    255
+  ],
+  "cat": [
+    191,
+    255,
+    255
+  ],
+  "cedarwaxwing": [
+    191,
+    63,
+    0
+  ],
+  "chicken": [
+    63,
+    191,
+    0
+  ],
+  "chipmunk": [
+    127,
+    127,
+    63
+  ],
+  "cormorant": [
+    191,
+    191,
+    0
+  ],
+  "cougar": [
+    0,
+    63,
+    255
+  ],
+  "cow": [
+    127,
+    127,
+    0
+  ],
+  "coyote": [
+    0,
+    191,
+    127
+  ],
+  "cranewhooping": [
+    0,
+    0,
+    255
+  ],
+  "crow": [
+    127,
+    63,
+    127
+  ],
+  "deer": [
+    191,
+    0,
+    127
+  ],
+  "dogamericanfoxhound": [
+    0,
+    255,
+    255
+  ],
+  "dogaustraliansheperd": [
+    191,
+    255,
+    0
+  ],
+  "dogbluetickcoonhound": [
+    191,
+    191,
+    127
+  ],
+  "dogcatahoulacur": [
+    63,
+    0,
+    255
+  ],
+  "dogchesbayretriever": [
+    191,
+    0,
+    63
+  ],
+  "dogcollie": [
+    63,
+    0,
+    191
+  ],
+  "doghobo": [
+    191,
+    63,
+    191
+  ],
+  "doghound": [
+    0,
+    127,
+    63
+  ],
+  "doghusky": [
+    255,
+    0,
+    0
+  ],
+  "doglab": [
+    63,
+    127,
+    63
+  ],
+  "dogpoodle": [
+    127,
+    255,
+    63
+  ],
+  "donkey": [
+    0,
+    255,
+    0
+  ],
+  "duck": [
+    255,
+    127,
+    0
+  ],
+  "eagle": [
+    255,
+    127,
+    127
+  ],
+  "egret": [
+    0,
+    63,
+    63
+  ],
+  "elk": [
+    255,
+    63,
+    191
+  ],
+  "fox": [
+    191,
+    127,
+    255
+  ],
+  "frogbull": [
+    191,
+    127,
+    63
+  ],
+  "gilamonster": [
+    0,
+    255,
+    191
+  ],
+  "goat": [
+    255,
+    63,
+    0
+  ],
+  "goosecanada": [
+    255,
+    191,
+    255
+  ],
+  "hawk": [
+    255,
+    63,
+    63
+  ],
+  "heron": [
+    127,
+    127,
+    191
+  ],
+  "horse_americanpaint": [
+    63,
+    191,
+    255
+  ],
+  "horse_americanstandardbred": [
+    127,
+    255,
+    0
+  ],
+  "horse_andalusian": [
+    0,
+    0,
+    63
+  ],
+  "horse_appaloosa": [
+    255,
+    63,
+    255
+  ],
+  "horse_arabian": [
+    63,
+    255,
+    127
+  ],
+  "horse_ardennes": [
+    0,
+    191,
+    63
+  ],
+  "horse_belgian": [
+    127,
+    191,
+    63
+  ],
+  "horse_dutchwarmblood": [
+    127,
+    127,
+    127
+  ],
+  "horse_hungarianhalfbred": [
+    191,
+    63,
+    127
+  ],
+  "horse_kentuckysaddle": [
+    0,
+    191,
+    0
+  ],
+  "horse_missourifoxtrotter": [
+    191,
+    127,
+    191
+  ],
+  "horse_morgan": [
+    127,
+    63,
+    255
+  ],
+  "horse_mustang": [
+    0,
+    191,
+    191
+  ],
+  "horse_nokota": [
+    191,
+    0,
+    0
+  ],
+  "horse_shire": [
+    191,
+    191,
+    255
+  ],
+  "horse_suffolkpunch": [
+    63,
+    255,
+    0
+  ],
+  "horse_tennesseewalker": [
+    255,
+    255,
+    127
+  ],
+  "horse_thoroughbred": [
+    191,
+    63,
+    255
+  ],
+  "horse_turkoman": [
+    0,
+    63,
+    127
+  ],
+  "horsemule": [
+    255,
+    127,
+    255
+  ],
+  "iguana": [
+    63,
+    255,
+    255
+  ],
+  "javelina": [
+    191,
+    0,
+    191
+  ],
+  "loon": [
+    63,
+    191,
+    63
+  ],
+  "moose": [
+    63,
+    63,
+    63
+  ],
+  "muskrat": [
+    0,
+    255,
+    127
+  ],
+  "oriole": [
+    0,
+    127,
+    127
+  ],
+  "owl": [
+    63,
+    127,
+    191
+  ],
+  "ox": [
+    255,
+    0,
+    63
+  ],
+  "panther": [
+    63,
+    0,
+    63
+  ],
+  "parrot": [
+    0,
+    255,
+    63
+  ],
+  "pelican": [
+    0,
+    63,
+    0
+  ],
+  "pheasant": [
+    63,
+    63,
+    255
+  ],
+  "pig": [
+    63,
+    63,
+    127
+  ],
+  "pigeon": [
+    0,
+    191,
+    255
+  ],
+  "possum": [
+    127,
+    0,
+    191
+  ],
+  "prairiechicken": [
+    63,
+    127,
+    127
+  ],
+  "pronghorn": [
+    255,
+    191,
+    0
+  ],
+  "quail": [
+    127,
+    255,
+    127
+  ],
+  "rabbit": [
+    63,
+    127,
+    255
+  ],
+  "raccoon": [
+    0,
+    127,
+    191
+  ],
+  "rat": [
+    63,
+    255,
+    63
+  ],
+  "raven": [
+    127,
+    191,
+    127
+  ],
+  "redfootedbooby": [
+    0,
+    127,
+    0
+  ],
+  "robin": [
+    127,
+    63,
+    191
+  ],
+  "rooster": [
+    127,
+    191,
+    0
+  ],
+  "roseatespoonbill": [
+    191,
+    0,
+    255
+  ],
+  "seagull": [
+    255,
+    255,
+    0
+  ],
+  "sheep": [
+    63,
+    191,
+    127
+  ],
+  "skunk": [
+    127,
+    0,
+    255
+  ],
+  "snake": [
+    255,
+    0,
+    127
+  ],
+  "snakeblacktailrattle": [
+    191,
+    127,
+    127
+  ],
+  "snakeferdelance": [
+    127,
+    63,
+    63
+  ],
+  "snakeredboa": [
+    63,
+    63,
+    191
+  ],
+  "songbird": [
+    63,
+    191,
+    191
+  ],
+  "sparrow": [
+    0,
+    0,
+    191
+  ],
+  "squirrel": [
+    191,
+    191,
+    191
+  ],
+  "toad": [
+    191,
+    63,
+    63
+  ],
+  "turkey": [
+    63,
+    0,
+    127
+  ],
+  "turtlesnapping": [
+    191,
+    255,
+    191
+  ],
+  "vulture": [
+    255,
+    0,
+    191
+  ],
+  "wolf": [
+    127,
+    255,
+    191
+  ],
+  "woodpecker": [
+    255,
+    191,
+    191
+  ]
+}

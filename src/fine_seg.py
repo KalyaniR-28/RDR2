@@ -20,7 +20,7 @@ sys.exit(1)
 def main():
     # Path
     IMAGE_DIR = "/media/sparackal/My Passport/RDR2_dataset_processed_test/PNG"
-    LABEL_MAPPING_JSON = "gt_Fine_labelIds_mapping.json"
+    LABEL_MAPPING_JSON = "configs/gt_Fine_labelIds_mapping.json"
     OUTPUT_DIR = os.path.join(os.getcwd(), "fineout")
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 

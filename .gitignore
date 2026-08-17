@@ -1,2 +1,7 @@
 coarseout/
 fineout/
+*.pt
+weights/
+images/
+videos/
+pred_*/

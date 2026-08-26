@@ -12,11 +12,6 @@ from groundingdino.util.inference import (
     annotate
 )
 
-
-# ============================================================
-# 1. PATHS
-# ============================================================
-
 INPUT_FOLDER = (
     "/media/rdr2/RDR2_dataset_processed_test/PNG/"
 )
@@ -38,35 +33,15 @@ WEIGHTS_PATH = (
     "weights/groundingdino_swint_ogc.pth"
 )
 
-
-# ============================================================
-# 2. CREATE OUTPUT FOLDER
-# ============================================================
-
 os.makedirs(
     OUTPUT_FOLDER,
     exist_ok=True
 )
 
-
-# ============================================================
-# 3. THRESHOLDS
-# ============================================================
-
 BOX_THRESHOLD = 0.30
 TEXT_THRESHOLD = 0.25
 
-
-# ============================================================
-# 4. PROMPT
-# ============================================================
-
 TEXT_PROMPT = "animal"
-
-
-# ============================================================
-# 5. PRINT SETTINGS
-# ============================================================
 
 print("\n==============================================")
 print("Grounding DINO - Animal Detection")
@@ -84,10 +59,6 @@ print(
     f"Text threshold  : {TEXT_THRESHOLD}"
 )
 
-
-# ============================================================
-# 6. LOAD MODEL
-# ============================================================
 
 device = (
     "cuda"
@@ -109,11 +80,6 @@ model = load_model(
     device=device
 )
 
-
-# ============================================================
-# 7. FIND ALL PNG IMAGES
-# ============================================================
-
 image_paths = sorted(
     glob.glob(
         os.path.join(
@@ -127,17 +93,7 @@ print(
     f"\nFound {len(image_paths)} images to process."
 )
 
-
-# ============================================================
-# 8. STORAGE FOR PREDICTIONS
-# ============================================================
-
 all_predictions = {}
-
-
-# ============================================================
-# 9. PROCESS ALL IMAGES
-# ============================================================
 
 for idx, img_path in enumerate(image_paths):
 
@@ -148,36 +104,16 @@ for idx, img_path in enumerate(image_paths):
         f"{filename}"
     )
 
-
-    # --------------------------------------------------------
-    # Output image path
-    # --------------------------------------------------------
-
     save_path = os.path.join(
         OUTPUT_FOLDER,
         f"det_{filename}"
     )
 
-
-    # --------------------------------------------------------
-    # Load image
-    # --------------------------------------------------------
-
     image_source, image = load_image(
         img_path
     )
 
-
-    # --------------------------------------------------------
-    # Get original image dimensions
-    # --------------------------------------------------------
-
     h, w, _ = image_source.shape
-
-
-    # --------------------------------------------------------
-    # Grounding DINO prediction
-    # --------------------------------------------------------
 
     boxes, logits, phrases = predict(
 
@@ -195,11 +131,6 @@ for idx, img_path in enumerate(image_paths):
 
     )
 
-
-    # --------------------------------------------------------
-    # Storage for this image
-    # --------------------------------------------------------
-
     image_predictions = []
 
 
@@ -207,22 +138,6 @@ for idx, img_path in enumerate(image_paths):
         f"Detected objects: "
         f"{len(boxes)}"
     )
-
-
-    # ========================================================
-    # CONVERT GROUNDING DINO BOXES
-    #
-    # Grounding DINO returns normalized boxes in:
-    #
-    #     cx, cy, width, height
-    #
-    # Convert them to pixel coordinates:
-    #
-    #     x1, y1, x2, y2
-    #
-    # This follows the conversion approach used in the
-    # Grounding DINO inference implementation.
-    # ========================================================
 
     boxes_pixel = (
         boxes
@@ -238,11 +153,6 @@ for idx, img_path in enumerate(image_paths):
         out_fmt="xyxy"
     ).numpy()
 
-
-    # ========================================================
-    # PROCESS EACH DETECTION
-    # ========================================================
-
     for box, logit, phrase in zip(
         xyxy,
         logits,
@@ -250,11 +160,6 @@ for idx, img_path in enumerate(image_paths):
     ):
 
         x1, y1, x2, y2 = box
-
-
-        # ----------------------------------------------------
-        # Create prediction entry
-        # ----------------------------------------------------
 
         prediction = {
 
@@ -281,10 +186,6 @@ for idx, img_path in enumerate(image_paths):
         )
 
 
-        # ----------------------------------------------------
-        # Print prediction
-        # ----------------------------------------------------
-
         print(
 
             f"    {phrase:<20} "
@@ -303,23 +204,9 @@ for idx, img_path in enumerate(image_paths):
 
         )
 
-
-    # ========================================================
-    # STORE PREDICTIONS FOR THIS IMAGE
-    # ========================================================
-
     all_predictions[filename] = (
         image_predictions
     )
-
-
-    # ========================================================
-    # CREATE ANNOTATED IMAGE
-    #
-    # IMPORTANT:
-    # annotate() expects the original normalized
-    # Grounding DINO boxes, not xyxy pixel boxes.
-    # ========================================================
 
     annotated_frame = annotate(
 
@@ -333,11 +220,6 @@ for idx, img_path in enumerate(image_paths):
 
     )
 
-
-    # ========================================================
-    # SAVE ANNOTATED IMAGE
-    # ========================================================
-
     Image.fromarray(
         annotated_frame
     ).save(save_path)
@@ -346,11 +228,6 @@ for idx, img_path in enumerate(image_paths):
     print(
         f"    Saved → {save_path}"
     )
-
-
-    # ========================================================
-    # SAVE CHECKPOINT EVERY 100 IMAGES
-    # ========================================================
 
     if (idx + 1) % 100 == 0:
 
@@ -371,11 +248,6 @@ for idx, img_path in enumerate(image_paths):
             f"after {idx + 1} images."
         )
 
-
-# ============================================================
-# 10. SAVE FINAL PREDICTION JSON
-# ============================================================
-
 with open(
     PREDICTION_JSON,
     "w"
@@ -386,15 +258,7 @@ with open(
         f,
         indent=2
     )
-
-
-# ============================================================
-# 11. FINISHED
-# ============================================================
-
-print("\n==============================================")
 print("Finished processing all images!")
-print("==============================================")
 
 print(
     f"Total images processed: "
@@ -416,5 +280,3 @@ print(
 print(
     PREDICTION_JSON
 )
-
-print("==============================================")

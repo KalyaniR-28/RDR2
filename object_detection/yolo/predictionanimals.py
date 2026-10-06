@@ -4,10 +4,10 @@ from pathlib import Path
 from ultralytics import YOLOWorld
 
 inputfolder = "/media/rdr2/RDR2_dataset_processed_test/PNG/"
-outputfolder = "./pred_animals_birds"
+outputfolder = "./pred_animals15"
 
 os.makedirs(outputfolder, exist_ok=True)
-prompt = ["animal","bird",""]
+prompt = ["animals",""]
 model = YOLOWorld("yolov8x-worldv2.pt")
 model.set_classes(prompt)
 image_extensions = (".png", ".jpg", ".jpeg")
@@ -49,10 +49,7 @@ for img_path in image_paths:
             )
 
     all_detections[img_name] = detections
-output_json = os.path.join(
-    outputfolder,
-    "animal_bird_predictions.json"
-)
+    output_json = os.path.join(outputfolder,"animals_predictions.json")
 
 with open(output_json, "w") as f:
     json.dump(all_detections, f, indent=4)

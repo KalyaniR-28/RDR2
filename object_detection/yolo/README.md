@@ -6,7 +6,7 @@ This section explains how to set up and run YOLO-World for animal detection. The
 
 - Conda or Miniconda
 - Python 3.11
-- A compatible NVIDIA GPU and driver for GPU acceleration (optional)
+- A compatible NVIDIA GPU
 
 ## Create the Conda Environment and activate
 

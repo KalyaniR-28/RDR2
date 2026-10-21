@@ -1,6 +1,6 @@
 # Grounded-SAM: Environment Setup
 
-This guide explains how to set up the Python environment for running Grounded-SAM animal instance segmentation using Grounding DINO and Segment Anything Model (SAM).
+How to set up the Python environment for running Grounded-SAM animal instance segmentation using Grounding DINO and Segment Anything Model (SAM).
 
 # Create and Activate the Conda Environment
 
@@ -57,10 +57,7 @@ Install the required supporting packages:
 ```bash
 pip install --no-deps supervision==0.16.0
 
-pip install opencv-python==4.11.0.86 \
-  numpy==1.26.4 \
-  transformers==4.48.3 \
-  tqdm addict yapf timm
+pip install opencv-python==4.11.0.86  numpy==1.26.4 transformers==4.48.3 tqdm addict yapf timm
 ```
 
 # Download the Model Checkpoints
@@ -85,7 +82,7 @@ python -u checkinstanceanimals.py
 
 Replace `checkinstanceanimals.py` with the actual Python script filename if it differs.
 
-## 7. Expected Outputs
+# Expected Outputs
 
 The pipeline generates the following outputs, depending on the script configuration:
 

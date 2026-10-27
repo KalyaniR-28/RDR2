@@ -32,15 +32,6 @@ for imageid, preds in tqdm(predictions.items(), desc="Evaluating Masks", unit="i
     if not match:
         continue
     capture_id = match.group(1)
-
-    # # Loading ground truth masks
-    # gt_list = [cv2.imread(str(p), cv2.IMREAD_GRAYSCALE) > 0 for p in gt_by_capture.get(capture_id, [])]
-    # target_masks = torch.from_numpy(np.stack(gt_list)) if gt_list else torch.zeros((0, 1, 1), dtype=torch.bool)
-    
-    # # Load predicted masks
-    # pred_list = [cv2.imread(str(PRED_FOLDER / p["mask_file"]), cv2.IMREAD_GRAYSCALE) > 0 for p in preds]
-    # scores = [p["confidence"] for p in preds]
-    # pred_masks = torch.from_numpy(np.stack(pred_list)) if pred_list else torch.zeros((0, 1, 1), dtype=torch.bool)
     
     #load the grouth truth and the prediction masks
     gt_list = [cv2.imread(str(p), cv2.IMREAD_GRAYSCALE) > 0 for p in gt_by_capture.get(capture_id, [])]

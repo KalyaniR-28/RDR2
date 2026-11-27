@@ -1,0 +1,114 @@
+background          : 96.39%
+alligator           : 0.51%
+armadillo           : 0.00%
+badger              : 0.00%
+bat                 : 0.00%
+bear                : 0.65%
+bearblack           : 0.76%
+beaver              : 0.00%
+bighornram          : 0.00%
+bluejay             : 0.00%
+boar                : 0.00%
+buck                : 0.32%
+buffalo             : 9.46%
+bull                : 0.00%
+californiacondor    : 0.00%
+cardinal            : 0.00%
+carolinaparakeet    : 0.00%
+cat                 : 0.00%
+cedarwaxwing        : 0.00%
+chicken             : 0.00%
+chipmunk            : 0.00%
+cormorant           : 0.00%
+cougar              : 0.00%
+cow                 : 20.36%
+coyote              : 0.00%
+cranewhooping       : 0.00%
+crow                : 0.61%
+deer                : 2.15%
+dogamericanfoxhound : 0.00%
+dogaustraliansheperd: 0.00%
+dogbluetickcoonhound: 0.00%
+dogcatahoulacur     : 0.00%
+dogchesbayretriever : 0.00%
+dogcollie           : 0.00%
+doghobo             : 0.00%
+doghound            : 0.00%
+doghusky            : 0.04%
+doglab              : 0.00%
+dogpoodle           : 0.00%
+donkey              : 0.00%
+duck                : 0.24%
+eagle               : 0.27%
+egret               : 0.00%
+elk                 : 0.01%
+fox                 : 0.11%
+frogbull            : 0.00%
+gilamonster         : 0.00%
+goat                : 0.00%
+goosecanada         : 0.00%
+hawk                : 0.80%
+heron               : 0.38%
+horse_americanpaint : 0.00%
+horse_americanstandardbred: 0.00%
+horse_andalusian    : 0.00%
+horse_appaloosa     : 0.00%
+horse_arabian       : 0.00%
+horse_ardennes      : 0.00%
+horse_belgian       : 0.00%
+horse_dutchwarmblood: 0.00%
+horse_hungarianhalfbred: 0.22%
+horse_kentuckysaddle: 0.16%
+horse_missourifoxtrotter: 0.00%
+horse_morgan        : 0.00%
+horse_mustang       : 1.26%
+horse_nokota        : 0.00%
+horse_shire         : 0.00%
+horse_suffolkpunch  : 0.00%
+horse_tennesseewalker: 0.00%
+horse_thoroughbred  : 2.97%
+horse_turkoman      : 0.00%
+horsemule           : 0.00%
+iguana              : 0.00%
+javelina            : 0.00%
+loon                : 0.00%
+moose               : 0.00%
+muskrat             : 0.00%
+oriole              : 0.00%
+owl                 : 0.00%
+ox                  : 2.66%
+panther             : 0.00%
+parrot              : 0.00%
+pelican             : 0.00%
+pheasant            : 0.00%
+pig                 : 0.00%
+pigeon              : 0.00%
+possum              : 0.00%
+prairiechicken      : 0.00%
+pronghorn           : 0.00%
+quail               : 0.00%
+rabbit              : 0.00%
+raccoon             : 0.00%
+rat                 : 0.00%
+raven               : 4.07%
+redfootedbooby      : 0.00%
+robin               : 0.00%
+rooster             : 0.00%
+roseatespoonbill    : 5.19%
+seagull             : 0.87%
+sheep               : 0.14%
+skunk               : 0.00%
+snake               : 0.00%
+snakeblacktailrattle: 0.00%
+snakeferdelance     : 0.00%
+snakeredboa         : 0.00%
+songbird            : 0.13%
+sparrow             : 0.00%
+squirrel            : 0.00%
+toad                : 0.00%
+turkey              : 0.00%
+turtlesnapping      : 0.00%
+vulture             : 0.00%
+wolf                : 0.49%
+woodpecker          : 0.00%
+Mean IoU            : 1.34%

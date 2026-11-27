@@ -1,0 +1,3 @@
+Background IoU: 99.72%
+Animal IoU:     20.87%
+Mean IoU:       60.29%

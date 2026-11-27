@@ -61,7 +61,7 @@ Clone the DINOv3 repository:
 git clone https://github.com/facebookresearch/dinov3.git
 ```
 
-Copy the `dinov3` directory from the cloned repository into the root of the SPAR repository, as required by the implementation.
+Clone the DINOv3 repository and take only the dinov3 directory to your main SPAR directory:
 
 ## 4. Pretrained Model
 
